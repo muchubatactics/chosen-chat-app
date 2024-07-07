@@ -35,7 +35,9 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
+
+    max-width: 100vw;
 }
 
 :root {
@@ -144,6 +146,7 @@ svg {
 }
 
 @media only screen and (max-width: 1024px) {
+
     .main {
         max-width: 90%;
         grid-template-columns: 1fr 3fr;
@@ -164,9 +167,26 @@ svg {
 }
 
 @media only screen and (max-width: 600px) {
+
+    body {
+        padding: 0px;
+        margin: 0;
+    }
+
+    html {
+        max-width: 100vw;
+        max-height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
     .main {
-        grid-template-rows: 1fr 6fr;
+        grid-template-rows: 1fr 7fr;
         grid-template-columns: 1fr;
+
+        max-width: 85%;
+
     }
 
     :root {
@@ -195,12 +215,18 @@ svg {
     }
 
     .message-div {
-        font-size: 0.8rem;
-        max-width: 85%;
+        font-size: 0.5rem;
+        max-width: 100%;
+    }
+
+    .chat, .side {
+        max-width: 70%;
     }
 }
 
 @media only screen and (max-width: 380px) {
+
+
     .main {
         grid-template-rows: 2fr 7fr;
         grid-template-columns: 1fr;
