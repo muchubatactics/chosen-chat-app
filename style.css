@@ -178,15 +178,14 @@ svg {
         max-height: 100vh;
         margin: 0;
         padding: 0;
-        overflow: hidden;
     }
 
     .main {
         grid-template-rows: 1fr 7fr;
         grid-template-columns: 1fr;
 
-        max-width: 85%;
-
+        max-width: 90%;
+        padding: 0;
     }
 
     :root {
@@ -220,7 +219,9 @@ svg {
     }
 
     .chat, .side {
-        max-width: 70%;
+        max-width: 90vw;
+        align-self: center;
+        box-sizing: border-box;
     }
 }
 
