@@ -35,7 +35,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: hidden;
 
     max-width: 100vw;
 }
@@ -215,7 +215,8 @@ svg {
 
     .message-div {
         font-size: 0.5rem;
-        max-width: 100%;
+        max-width: 90%;
+        margin: 3px;
     }
 
     .chat, .side {
